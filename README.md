@@ -8,5 +8,4 @@ The Image and Video Organizor is a Python script that helps you organize your ph
 
 ![image](https://user-images.githubusercontent.com/93609912/236557730-407f96a4-1b02-4531-bdef-fee4c2e5962c.png)
 
-
 ![image](https://user-images.githubusercontent.com/93609912/236556896-cba4c935-6336-4c90-85ea-e6f1227a1712.png)
