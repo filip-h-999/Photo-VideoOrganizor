@@ -38,14 +38,12 @@ def main(input_dir, output_dir):
 
     def image():
         image_extensions  = [".jpg", ".png", ".gif", ".jpeg", ".svg"]
-        organize(input_dir, image_extensions, output_dir)
+        organize(input_dir, image_extensions, f'{output_dir}\\photos')
 
 
     def video():
-        output_dir = f'{input_dir}\\videos'
-
         video_extentions = [".mp4", ".avi", ".mov", ".wmv", ".mkv"]
-        organize(input_dir, video_extentions, output_dir)
+        organize(input_dir, video_extentions, f'{output_dir}\\videos')
 
 
     image()
