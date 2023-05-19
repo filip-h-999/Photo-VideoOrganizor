@@ -26,7 +26,7 @@ def main(input_dir, output_dir):
                     create_time = datetime.fromtimestamp(os.path.getmtime(file_path))
 
                 year, month = create_time.strftime('%Y-%m').split('-')
-                output_path = os.path.join(output_dir, year, month)
+                output_path = os.path.join(output_dir, year, f'{year}-{month}')
                 os.makedirs(output_path, exist_ok=True)
                 
                 destination_path = os.path.join(output_path, filename)
