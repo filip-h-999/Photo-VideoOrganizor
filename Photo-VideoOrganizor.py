@@ -1,7 +1,6 @@
 import os
 import shutil
 from datetime import datetime
-import sys
 import exifread
 import argparse
 
@@ -39,16 +38,24 @@ def main():
 
                 year, month = create_time.strftime('%Y-%m').split('-')
                 output_path = os.path.join(output_dir, year, f'{year}-{month}')
-                os.makedirs(output_path, exist_ok=True)
                 
-                destination_path = os.path.join(output_path, filename)
 
                 if camera_makers == []:
-                    shutil.move(file_path, destination_path)
-                elif not os.path.exists(destination_path) and camera_maker in camera_makers:
-                    shutil.move(file_path, destination_path)
+                    move(file_path, output_path, filename)
+                elif camera_maker in camera_makers:
+                    move(file_path, output_path, filename)
                 else:
-                    print(f"A file with the name '{filename}' already exists.")
+                    print(f"A file with the name: '{filename}' and camera maker: '{camera_maker}' was ignored.")
+
+
+    def move(file_path, output_path,filename):
+        os.makedirs(output_path, exist_ok=True)   
+        destination_path = os.path.join(output_path, filename)
+
+        if not os.path.exists(destination_path):
+            shutil.move(file_path, destination_path)  
+        else:
+            print(f"A file with the name: '{filename}' and camera maker: '{camera_maker}' already exists.")
 
 
     def image():
