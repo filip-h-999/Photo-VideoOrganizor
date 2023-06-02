@@ -10,7 +10,19 @@ The Image and Video Organizor is a Python script that helps you organize your ph
 
 ![image](https://user-images.githubusercontent.com/93609912/236556896-cba4c935-6336-4c90-85ea-e6f1227a1712.png)
 
-Example:
-python3 Photo-VideoOrganizor.py Documents/Pictures Dokuments/PhotoColection
+#### Example:
+
+For sorting all camera typs use the following command:
+> python Photo-VideoOrganizor.py C:\Users\Downloads\test C:\Users\Downloads\test
+
+For sorting specific camera maker pictures and videos use the following command:
+> python Photo-VideoOrganizor.py C:\Users\Downloads\test C:\Users\Downloads\test --camera_maker samsung
+
+You can also use multiple camera maker:  
+> --camera_maker samsung apple
+
+Arguments:
+
 1. argument is the intup directory
 2. argument is the output directory
+3. argument is the camera maker
