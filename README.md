@@ -1,4 +1,4 @@
-#Image and Video Organizor
+# Image and Video Organizor
 
 The Image and Video Organizor is a Python script that helps you organize your photos and videos by sorting them into subdirectories based on their creation dates. The script takes an input directory containing image and video files and moves them to an output directory, organizing them by year and month.
 
