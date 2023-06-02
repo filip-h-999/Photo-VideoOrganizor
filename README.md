@@ -13,13 +13,22 @@ The Image and Video Organizor is a Python script that helps you organize your ph
 #### Example:
 
 For sorting all camera typs use the following command:
-> python Photo-VideoOrganizor.py C:\Users\Downloads\test C:\Users\Downloads\test
+
+``` bash
+ python Photo-VideoOrganizor.py C:\Users\Downloads\test C:\Users\Downloads\test
+ ```
 
 For sorting specific camera maker pictures and videos use the following command:
-> python Photo-VideoOrganizor.py C:\Users\Downloads\test C:\Users\Downloads\test --camera_maker samsung
 
-You can also use multiple camera maker:  
-> --camera_maker samsung apple
+``` bash
+ python Photo-VideoOrganizor.py C:\Users\Downloads\test C:\Users\Downloads\test --camera_maker samsung
+```
+
+You can also use multiple camera maker:
+
+``` bash
+ python Photo-VideoOrganizor.py C:\Users\Downloads\test C:\Users\Downloads\test --camera_maker samsung apple
+```
 
 Arguments:
 
